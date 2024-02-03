@@ -8,7 +8,7 @@ describe('transform tests', () => {
     expect(transformed).toMatchSnapshot();
   });
 
-  test('remove unnecessary nodes', async () => {
+  test('remove unnecessary nodes', async () => {    
     const transformed = await transform('<svg id="test"><g><g></g></g></svg>');
 
     expect(transformed).toEqual(expect.stringMatching(/<svg><\/svg>/));
