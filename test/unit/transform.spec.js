@@ -13,7 +13,7 @@ describe('transform tests', () => {
 
     expect(transformed).toEqual(expect.stringMatching(/<svg><\/svg>/));
     expect(transformed).toMatchSnapshot();
-  });
+  }); 
 
   test('convert attributes', async () => {
     const transformed = await transform('<svg class="test" data-name="svg" fill-rule="evenodd"/>');
