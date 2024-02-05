@@ -11,6 +11,7 @@ export default Icon
 "
 `;
 
+
 exports[`transform tests clean attributes 1`] = `
 "import React from \\"react\\";
 
